@@ -490,7 +490,7 @@
   <!-- HTC Desire Z Trees Start -->
   <project path="device/htc/vision" name="Andromadus/android_device_htc_vision" remote="github" revision="cm-11.0" />
   <project path="vendor/htc/vision" name="Andromadus/proprietary_htc_vision" remote="github" revision="cm-11.0" />
-  <project path="kernel/htc/msm7x30-3.0" name="HTCDreamOn/htc7x30-3.0" remote="github" revision="andromadus" />
+  <project path="kernel/htc/msm7x30-3.0" name="Andromadus/htc7x30-3.0" remote="github" revision="andromadus_4.4" />
   <!-- HTC Desire Z Trees End -->
 
   <!-- PureKat Start -->
