@@ -500,8 +500,6 @@
   <project path="vendor/cm" name="android_vendor_cm" remote="PK" revision="cm-11.0" />
   <project path="device/htc/msm7x30-common" name="android_device_htc_msm7x30-common" remote="PK" revision="cm-11.0" />
   <project path="hardware/qcom/media-legacy" name="android_hardware_qcom_media" remote="PK" revision="cm-11.0" />
-  <project path="packages/app/MultiWindowSidebar" name="zst123/MultiWindowSidebar" remote="github" revision="master" />
-  <project path="packages/app/NotificationPeekPort" name="lzanita09/NotificationPeekPort" remote="github" revision="master" />
   <!-- PureKat End -->
   
 </manifest>
