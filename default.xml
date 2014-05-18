@@ -21,14 +21,8 @@
            sync-j="4" />
 
   <!-- CyanogenMod & AOSP Start -->
-  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-
-  <project path="android" name="PureKat/android" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
-  <project path="art" name="CyanogenMod/android_art" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
@@ -307,7 +301,6 @@
   <project path="frameworks/opt/telephony" name="CyanogenMod/android_frameworks_opt_telephony" groups="pdk" />
   <project path="frameworks/opt/telephony-msim" name="CyanogenMod/android_frameworks_opt_telephony-msim" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard" />
-  <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" groups="pdk" />
   <project path="frameworks/support" name="CyanogenMod/android_frameworks_support" />
   <project path="frameworks/testing" name="CyanogenMod/android_frameworks_testing" />
   <project path="frameworks/uiautomator" name="platform/frameworks/uiautomator" remote="aosp" revision="refs/tags/android-4.4.2_r2" />
@@ -493,8 +486,16 @@
   <!-- HTC Desire Z Trees End -->
 
   <!-- PureKat Start -->
+  <project path="build" name="android_build" remote="PK" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <project path="android" name="android" remote="PK" />
+
+  <project path="art" name="android_art" remote="PK" />
   <project path="frameworks/av" name="android_frameworks_av" remote="PK" revision="cm-11.0" groups="pdk" />
   <project path="frameworks/base" name="android_frameworks_base" remote="PK" revision="cm-11.0" />
+  <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" remote="PK" groups="pdk" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="PK" revision="cm-11.0"  />
   <project path="packages/apps/PureKatAbout" name="android_packages_apps_PureKatAbout" remote="PK" revision="kk-4.4" />
   <project path="vendor/cm" name="android_vendor_cm" remote="PK" revision="cm-11.0" />
