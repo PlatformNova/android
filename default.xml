@@ -502,7 +502,8 @@
   <project path="vendor/cm" name="android_vendor_cm" remote="PK" revision="cm-11.0" />
   <project path="device/htc/msm7x30-common" name="android_device_htc_msm7x30-common" remote="PK" revision="cm-11.0" />
   <project path="hardware/qcom/media-legacy" name="android_hardware_qcom_media" remote="PK" revision="cm-11.0" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="JustArchi/Linaro" remote="github" revision="4.8-androideabi" /> 
+  <project name="JustArchi/Linaro" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="4.8-androideabi" />
+  <project name="JustArchi/Linaro" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="4.8-eabi" /> 
   <!-- PureKat End -->
   
 </manifest>
