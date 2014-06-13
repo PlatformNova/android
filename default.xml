@@ -21,6 +21,9 @@
            sync-j="4" />
 
   <!-- CyanogenMod & AOSP Start -->
+  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
@@ -490,9 +493,6 @@
   <!-- HTC Desire Z Trees End -->
 
   <!-- PureKat Start -->
-  <project path="build" name="android_build" groups="pdk" remote="PK" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="android" name="android" remote="PK" />
   <project path="art" name="android_art" remote="PK" />
   <project path="frameworks/av" name="android_frameworks_av" remote="PK" revision="cm-11.0" groups="pdk" />
@@ -503,10 +503,5 @@
   <project path="device/htc/msm7x30-common" name="android_device_htc_msm7x30-common" remote="PK" revision="cm-11.0" />
   <project path="hardware/qcom/media-legacy" name="android_hardware_qcom_media" remote="PK" revision="cm-11.0" /> 
   <!-- PureKat End -->
-
-  <!-- Google GCC ToolChain -->
-  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="aosp" revision="master" />
-  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="aosp" revision="master" />
-  <!-- END -->
 
 </manifest>
