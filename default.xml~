@@ -21,7 +21,7 @@
            sync-j="4" />
 
   <!-- CyanogenMod & AOSP Start -->
-  <project path="build" name="PureKat/android_build" groups="pdk" >
+  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
