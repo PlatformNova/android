@@ -25,7 +25,6 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
-  <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
   <project path="bootable/recovery-cm" name="CyanogenMod/android_bootable_recovery-cm" />
@@ -505,8 +504,9 @@
   <project path="hardware/qcom/media-legacy" name="android_hardware_qcom_media" remote="PK" revision="cm-11.0" /> 
   <!-- PureKat End -->
 
-  <!-- Linaro -->
+  <!-- Optimizations -->
   <project name="JustArchi/Linaro" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="4.9-eabi" />
   <project name="UBERUTILS/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="master" />
+  <project path="bionic" name="KitKatPurity/platform_bionic" groups="pdk" revision="kitkat" />
 
 </manifest>
