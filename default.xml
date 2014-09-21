@@ -495,7 +495,7 @@
 
   <!-- HTC Desire Z Trees Start -->
   <project path="device/htc/vision" name="android_device_htc_vision" remote="PK" revision="cm-11.0" />
-  <project path="hardware/qcom/audio-legacy" name="Evervolv/android_hardware_qcom_audio-legacy" remote="github" revision="kitkat" />
+  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="PK" revision="cm-11.0" />
   <project path="hardware/qcom/display-legacy" name="milaq/android_hardware_qcom_display-legacy" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="PK" revision="cm-11.0" groups="qcom" />
   <project path="hardware/qcom/media-legacy" name="milaq/android_hardware_qcom_media-legacy" remote="github" revision="cm-11.0" />
